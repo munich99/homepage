@@ -1,0 +1,18 @@
+// $blue:    #0d6e00;
+$link-color:   #e6ab6d;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.start{
+    background-image: url(../assets/frontend_developer.jpg);
+    background-size: cover;   
+}
+
+
+
+.start2 {
+    bottom:1rem;
+    right:1rem;
+}
