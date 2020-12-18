@@ -22,14 +22,18 @@
           </div>       
         </div>
         <div class="row pt-3"  style="height: 47vh">
-          <div class="col-7 col-md bg-secondary pt-3 me-lg-2"> 
-            Mein Name ist Sebastian Sawicz. Ich arbeite seit über 15 Jahren leidenschaftlich an digitalen Projekten visueller Wahrnehmung und Information. Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause. Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.
+          <div class="bg-secondary col-12 col-md me-2"> 
+            Name ist Sebastian Sawicz.<br>
+              Ich arbeite seit über 15 Jahren leidenschaftlich an digitalen Projekten visueller Wahrnehmung und Information.
+               Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause.
+                Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.
+           
           </div>
 
-          <div class="col-5 col-md text-end bg-info start mx-lg-2">            
+          <div class="col text-end bg-info start mt-3 mt-md-0 me-1">            
           </div>
 
-          <div class="col bg-primary text-end position-relative mt-3 mt-md-0  ms-lg-2" style="min-height: 6em;">
+          <div class="col bg-primary text-end position-relative mt-3 mt-md-0   ms-lg-2 ms-1" style="min-height: 6em;">
             <div class="position-absolute start2">
                 <!-- Button trigger modal -->
               <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Kontakt</a><br>
@@ -51,24 +55,24 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your name">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput2" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea3" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
-          </div>
+          <form action="https://formspree.io/f/mleopqwq" method="POST">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="your name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput2" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput2" name="_replyto" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea3" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea3" name="message" rows="3"></textarea>
+            </div>
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
+          <button type="submit" class="btn btn-primary">Understood</button>
         </div>
       </div>
     </div>
