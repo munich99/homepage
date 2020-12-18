@@ -1,5 +1,8 @@
-// $blue:    #0d6e00;
-$link-color:   #e6ab6d;
+$blue: #f8776d; //primary
+$gray-600: #fec07f; // secondary
+$link-color:   #46321B;
+
+
 
 
 
@@ -15,4 +18,8 @@ $link-color:   #e6ab6d;
 .start2 {
     bottom:1rem;
     right:1rem;
+}
+
+body {
+    color: #46321B;
 }
