@@ -29,8 +29,8 @@
             <div class="col col-12 col-md-4 position-relative">
 
               <div class="saturn">
-                <img src="/assets/wolke.svg" alt="">
-                <div class="rain">rain</div>
+                <img src="/assets/wolke2.svg" alt="">
+                <div class="rain mt-3">&nbsp;</div>
               </div>
               
 
@@ -49,13 +49,15 @@
                    
 
                    @keyframes myrain {
-                    0% { background-color: transparent; }
-                    37.5% { background-color: transparent;}
-                    38% { background-color: chartreuse;}
-                    60% {background-color: chartreuse;}
-                    61.5% { background-color: transparent;}
+                    0% { opacity: 0;}
+                    37.5% { opacity: 0;}
+                    38% { opacity: 1; background-image: url(/assets/regen1.svg);}
+                    44% { background-image: url(/assets/regen2.svg); }
+                    50%  {opacity: 1; background-image: url(/assets/regen1.svg);}
+                    60% {opacity: 1; background-image: url(/assets/regen2.svg);}
+                    61.5% { opacity: 0;}
                  
-                    100%   { }
+                    100%   { opacity: 0;}
                   }
 
                    .saturn {
@@ -81,10 +83,10 @@
                             animation: myOrbit 4s linear infinite; /* Chrome, Firefox 16+, 
                                                                       IE 10+, Safari 5 */
 
-                    width: 10vw;
+                    width: 20vw;
                     height: auto;
                     position: absolute;
-                    right: 20%;
+                    right: 10%;
                     
                 }
 
