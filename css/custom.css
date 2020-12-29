@@ -11337,11 +11337,10 @@ body {
   h1, .h1 {
     font-size: 3rem;
   }
-  .info-start div {
+  .info-start img {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 20% !important;
   }
   .info-header div:first-child {
     border: 0 !important;
