@@ -11307,6 +11307,17 @@ fieldset:disabled .btn {
   background-size: cover;
 }
 
+.info-start {
+  background-image: url(../assets/isabella-and-louisa-fischer-MEc4jblaxZ4-unsplash.jpg);
+  background-size: cover;
+}
+
+.info-start div {
+  min-height: 5em;
+  min-width: 30%;
+  background-color: #1ce036;
+}
+
 .start2 {
   bottom: 1rem;
   right: 1rem;
@@ -11316,7 +11327,39 @@ body {
   color: #46321B;
 }
 
-h1, .h1 {
-  font-size: 5rem !important;
+@media (min-width: 576px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1, .h1 {
+    font-size: 3rem;
+  }
+  .info-start div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20% !important;
+  }
+  .info-header div:first-child {
+    border: 0 !important;
+  }
+  .info-header {
+    height: 67vh;
+  }
+}
+
+@media (min-width: 992px) {
+  h1, .h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 5rem;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
