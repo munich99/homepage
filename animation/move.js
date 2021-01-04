@@ -12,9 +12,11 @@ window.onscroll = function myFunction() {
     w = document.getElementById("myOne").offsetWidth;
   
           
-    if (y>20){
+    if (y>0){
       document.getElementById("myOne").classList.add("scroll");
       document.getElementById("myOne").style.top = 0;
+      document.getElementById("myOne").style.left = -y *2 + "px"; 
+      document.getElementById("myTwo").style.left = y *2 + "px"; 
 
       document.getElementById("myTwo").classList.add("scroll");
       document.getElementById("myTwo").style.top = "70vh";
