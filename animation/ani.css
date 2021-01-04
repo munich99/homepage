@@ -11,3 +11,9 @@
     from {transform:rotate(0deg);}
     to {transform:rotate(359deg);}
  }
+
+ .scroll {
+   position: fixed;
+   width: 100%;
+   top: 0;
+  }
