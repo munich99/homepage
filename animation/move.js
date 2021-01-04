@@ -14,6 +14,11 @@ window.onscroll = function myFunction() {
           
     if (y>20){
       document.getElementById("myOne").classList.add("scroll");
+      document.getElementById("myOne").style.top = 0;
+
+      document.getElementById("myTwo").classList.add("scroll");
+      document.getElementById("myTwo").style.top = "70vh";
+
     }
     else{
       document.getElementById("myOne").classList.remove("scroll");
