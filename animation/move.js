@@ -12,7 +12,7 @@ window.onscroll = function myFunction() {
     w = document.getElementById("myOne").offsetWidth;
   
           
-    if (y>0){
+    if (y>1){
       document.getElementById("myOne").classList.add("scroll");
       document.getElementById("myOne").style.top = 0;
       document.getElementById("myOne").style.left = -y *2 + "px"; 
@@ -24,6 +24,7 @@ window.onscroll = function myFunction() {
     }
     else{
       document.getElementById("myOne").classList.remove("scroll");
+      document.getElementById("myTwo").classList.remove("scroll");
     }
               
     //     }
