@@ -7,250 +7,278 @@
 
     <!-- Bootstrap CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="animation/ani.css">
-    <script src="animation/move.js"></script>
+    <link rel="stylesheet" href="./sass/style.css">    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <title>Hello, world!</title>
+    <title>Hello Webdesign</title>
+
   </head>
   <body>
+    <div class="container mb-5 first-theme">
+        <div class="row">
 
-    <div id="myOne" >
-    
-        <div class="container" style="margin-top: 3vh; margin-bottom: 3vh;">     
-
-            <div  class="info-header row bg-primary">
-
-              <div class="col-12 col-md-8 mb-0 pt-4 border-bottom border-5 border-white">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="d-block text-end">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-envelope ms-3" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                  </svg></a>
-                <div>
-                  <h1 class="ps-2 text-white">WEBDESIGN</h1>
-                  <h1 class="ps-2 text-white ">FRONTEND</h1>
-                  <h1 class="ps-2 text-white">STYLING</h1>
-                </div>
-              </div> 
-
-              <div class="info-start col-12 col-md-4 position-relative p-0">
-                <img style="width: 10em; height: auto;" src="./assets/erfahrener_designer.png" alt="">
-              </div>   
+          <div class="col-sm-8 p-4 bg-white">
+            <div class="text-end">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#Modal-Kontakt" class="d-block">
+                <i class="far fa-envelope text-icon" style="font-size: 2em;"></i>
+              </a>
             </div>
-
-        </div>
-      </div>
-
-
-
-
-      <div id="myTwo">
-
-    <div class="container" style="margin-top: 3vh; margin-bottom: 3vh; ">   
-
-        <div  class="row pt-3 mt-3 bg-primary">
-          <div class="col col-md-8">
-            <h3 class="text-white">Online-Auftritt</h3>
-            <h3 class="text-white">Online-Shop</h3>
-            <h3 class="text-white">E-Marketing</h3>
-            <h3 class="text-white">Interaktive Apps</h3>
+            <div style="background: none;">
+              <h1 class="text-primary">WEBDESIGN</h1>
+              <h1 class="text-primary">FRONTEND</h1>
+              <h1 class="text-primary">STYLING</h1>
+            </div>
           </div>
-          <div class="col col-md-4">
-            <img class="img-fluid" src="./assets/responsive2.png" alt="">
-          </div>        
+          
+          <div class="col-sm p-0 bg-primary position-relative">
+            <img class="position-absolute bottom-0 start-0 p-3 w-50" src="./assets/erfahrener_designer.png" alt="">         
+          </div>
+        </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 p-4 bg-white">
+          Mein Name ist Sebastian Sawicz. Ich arbeite seit über 15 Jahren leidenschaftlich an digitalen Projekten visueller Wahrnehmung und Information. Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause. Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.
+        </div>
+        <div class="col-sm bg-primary">
+          One of three columns
         </div>
       </div>
     </div>
-  
 
+    <!-- Footer -->
+    <footer class="fixed-bottom bg-dark text-white py-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <a href="#" class="col-sm" data-bs-toggle="modal" data-bs-target="#Modal-Impressum">Impressum</a>          
+          <div class="col-sm text-center">
+            <span style="font-size: 2em;"><i class="fab fa-github mx-2 text-icon"></i></span>
+            <span style="font-size: 2em;"><i class="fab fa-xing mx-2 text-icon"></i>  </span>  
+          </div>
+          <a href="#" class="col-sm text-end" data-bs-toggle="modal" data-bs-target="#Modal-Datenschutz">Datenschutz</a>  
+        </div>
+      </div>
+    </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="Modal-Impressum" tabindex="-1" aria-labelledby="ImpressumModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ImpressumModalLabel">Impressum</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+Informationspflicht laut § 5 TMG.<br><br>
 
- <div class="container" style="height: 2000px; padding-top: 100vh;">Mein Name ist Sebastian Sawicz. 
-  Ich arbeite seit über 15 Jahren leidenschaftlich an digitalen Projekten visueller Wahrnehmung und Information.
-   Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause.
-    Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.
-  <p></p><p>Im Laufe der Jahre</p>
-  
-  <div id="myThree" class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="/assets/logo_bootstrap.png" class="card-img-top" alt="bootstrap logo">
-        <div class="card-body">
-          <h5 class="card-title">Bootstrap Styling</h5>
-          <p class="card-text">Für responsive Design, mobil first, css</p>
+Maria-Lehner-Str. 3,<br>
+81671 München,<br>
+Deutschland<br><br>
+
+Tel.: 017655069778<br>
+E-Mail: sebastian.hamburg@yahoo.de<br><br>
+
+Berufsbezeichnung: Webdesigner, Grafiker<br><br>
+
+Quelle: Erstellt mit dem Impressum Generator von AdSimple in Kooperation mit bauenwir.de<br><br>
+
+<h5>EU-Streitschlichtung</h5>
+Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br><br>
+Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter http://ec.europa.eu/odr?tid=321253263 zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.<br><br>
+
+Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.<br><br>
+
+<h5>Haftung für Inhalte dieser Website</h5>
+Wir entwickeln die Inhalte dieser Webseite ständig weiter und bemühen uns korrekte und aktuelle Informationen bereitzustellen. Laut Telemediengesetz (TMG) §7 (1) sind wir als Diensteanbieter für eigene Informationen, die wir zur Nutzung bereitstellen, nach den allgemeinen Gesetzen verantwortlich. Leider können wir keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene die seitens Dritter bereitgestellt wurden. Als Diensteanbieter im Sinne der §§ 8 bis 10 sind wir nicht verpflichtet, die von ihnen übermittelten oder gespeicherten Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.<br><br>
+
+Unsere Verpflichtungen zur Entfernung von Informationen oder zur Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen aufgrund von gerichtlichen oder behördlichen Anordnungen bleiben auch im Falle unserer Nichtverantwortlichkeit nach den §§ 8 bis 10 unberührt.<br><br>
+
+Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitte wir Sie uns umgehend zu kontaktieren, damit wir die rechtswidrigen Inhalte entfernen können. Sie finden die Kontaktdaten im Impressum.<br><br>
+
+<h5>Haftung für Links auf dieser Website</h5>
+Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Haftung für verlinkte Websites besteht für uns nicht, da wir keine Kenntnis rechtswidriger Tätigkeiten hatten und haben, uns solche Rechtswidrigkeiten auch bisher nicht aufgefallen sind und wir Links sofort entfernen würden, wenn uns Rechtswidrigkeiten bekannt werden.<br><br>
+
+Wenn Ihnen rechtswidrige Links auf unserer Website auffallen, bitte wir Sie uns zu kontaktieren. Sie finden die Kontaktdaten im Impressum.<br><br>
+
+<h5>Urheberrechtshinweis</h5>
+Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht der Bundesrepublik Deutschland. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen Websites erneut veröffentlichen. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.<br><br>
+
+Sollten Sie auf dieser Webseite Inhalte finden, die das Urheberrecht verletzen, bitten wir Sie uns zu kontaktieren.<br><br>
+
+<h5>Bildernachweis</h5>
+Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.<br><br>
+
+Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen:<br>
+
+Illustrator Sebastian Sawicz
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="/assets/logo_wordpress.png" class="card-img-top" alt="wordpress logo">
-        <div class="card-body">
-          <h5 class="card-title">Wordpress CMS</h5>
-          <p class="card-text">CMS, für alle, die selber den Inhalt in der Hand behalten wollwn.</p>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal-Datenschutz" tabindex="-1" aria-labelledby="ImpressumModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ImpressumModalLabel">Datenschutzerklärung</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Datenschutz</h5>
+            Wir haben diese Datenschutzerklärung (Fassung 22.01.2021-321253263) verfasst, um Ihnen gemäß der Vorgaben der Datenschutz-Grundverordnung (EU) 2016/679 zu erklären, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsmöglichkeiten Sie als Besucher dieser Webseite haben.<br><br>
+            
+            Leider liegt es in der Natur der Sache, dass diese Erklärungen sehr technisch klingen, wir haben uns bei der Erstellung jedoch bemüht die wichtigsten Dinge so einfach und klar wie möglich zu beschreiben.<br><br>
+            
+            <h5>Automatische Datenspeicherung</h5>
+            Wenn Sie heutzutage Webseiten besuchen, werden gewisse Informationen automatisch erstellt und gespeichert, so auch auf dieser Webseite.<br><br>
+            
+            Wenn Sie unsere Webseite so wie jetzt gerade besuchen, speichert unser Webserver (Computer auf dem diese Webseite gespeichert ist) automatisch Daten wie<br>
+            
+            die Adresse (URL) der aufgerufenen Webseite<br>
+            Browser und Browserversion<br>
+            das verwendete Betriebssystem<br>
+            die Adresse (URL) der zuvor besuchten Seite (Referrer URL)<br>
+            den Hostname und die IP-Adresse des Geräts von welchem aus zugegriffen wird<br>
+            Datum und Uhrzeit<br>
+            in Dateien (Webserver-Logfiles).<br><br>
+            
+            In der Regel werden Webserver-Logfiles zwei Wochen gespeichert und danach automatisch gelöscht. Wir geben diese Daten nicht weiter, können jedoch nicht ausschließen, dass diese Daten beim Vorliegen von rechtswidrigem Verhalten eingesehen werden.<br><br>
+            
+            <h5>Cookies</h5>
+            Unsere Website verwendet HTTP-Cookies um nutzerspezifische Daten zu speichern.<br><br>
+            Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit Sie die folgende Datenschutzerklärung besser verstehen.<br><br>
+            
+            <h5>Was genau sind Cookies?</h5>
+            Immer wenn Sie durch das Internet surfen, verwenden Sie einen Browser. Bekannte Browser sind beispielsweise Chrome, Safari, Firefox, Internet Explorer und Microsoft Edge. Die meisten Webseiten speichern kleine Text-Dateien in Ihrem Browser. Diese Dateien nennt man Cookies.<br><br>
+            
+            Eines ist nicht von der Hand zu weisen: Cookies sind echt nützliche Helferlein. Fast alle Webseiten verwenden Cookies. Genauer gesprochen sind es HTTP-Cookies, da es auch noch andere Cookies für andere Anwendungsbereiche gibt. HTTP-Cookies sind kleine Dateien, die von unserer Website auf Ihrem Computer gespeichert werden. Diese Cookie-Dateien werden automatisch im Cookie-Ordner, quasi dem “Hirn” Ihres Browsers, untergebracht. Ein Cookie besteht aus einem Namen und einem Wert. Bei der Definition eines Cookies müssen zusätzlich ein oder mehrere Attribute angegeben werden.<br><br>
+            
+            Cookies speichern gewisse Nutzerdaten von Ihnen, wie beispielsweise Sprache oder persönliche Seiteneinstellungen. Wenn Sie unsere Seite wieder aufrufen, übermittelt Ihr Browser die „userbezogenen“ Informationen an unsere Seite zurück. Dank der Cookies weiß unsere Website, wer Sie sind und bietet Ihnen Ihre gewohnte Standardeinstellung. In einigen Browsern hat jedes Cookie eine eigene Datei, in anderen wie beispielsweise Firefox sind alle Cookies in einer einzigen Datei gespeichert.<br><br>
+            
+            Es gibt sowohl Erstanbieter Cookies als auch Drittanbieter-Cookies. Erstanbieter-Cookies werden direkt von unserer Seite erstellt, Drittanbieter-Cookies werden von Partner-Webseiten (z.B. Google Analytics) erstellt. Jedes Cookie ist individuell zu bewerten, da jedes Cookie andere Daten speichert. Auch die Ablaufzeit eines Cookies variiert von ein paar Minuten bis hin zu ein paar Jahren. Cookies sind keine Software-Programme und enthalten keine Viren, Trojaner oder andere „Schädlinge“. Cookies können auch nicht auf Informationen Ihres PCs zugreifen.<br><br>
+            
+            So können zum Beispiel Cookie-Daten aussehen:<br><br>
+            
+            Name: _ga<br>
+            Ablaufzeit: 2 Jahre<br>
+            Verwendung: Unterscheidung der Webseitenbesucher<br>
+            Beispielhafter Wert: GA1.2.1326744211.152321253263<br>
+            Ein Browser sollte folgende Mindestgrößen unterstützen:<br><br>
+            
+            Ein Cookie soll mindestens 4096 Bytes enthalten können<br>
+            Pro Domain sollen mindestens 50 Cookies gespeichert werden können<br>
+            Insgesamt sollen mindestens 3000 Cookies gespeichert werden können<br><br>
+            <h5>Welche Arten von Cookies gibt es?</h5>
+            Die Frage welche Cookies wir im Speziellen verwenden, hängt von den verwendeten Diensten ab und wird in der folgenden Abschnitten der Datenschutzerklärung geklärt. An dieser Stelle möchten wir kurz auf die verschiedenen Arten von HTTP-Cookies eingehen.<br><br>
+            
+            Man kann 4 Arten von Cookies unterscheiden:<br><br>
+            
+            <b>Unbedingt notwendige Cookies</b>
+            Diese Cookies sind nötig, um grundlegende Funktionen der Website sicherzustellen. Zum Beispiel braucht es diese Cookies, wenn ein User ein Produkt in den Warenkorb legt, dann auf anderen Seiten weitersurft und später erst zur Kasse geht. Durch diese Cookies wird der Warenkorb nicht gelöscht, selbst wenn der User sein Browserfenster schließt.<br><br>
+            
+            <b>Funktionelle Cookies</b>
+            Diese Cookies sammeln Infos über das Userverhalten und ob der User etwaige Fehlermeldungen bekommt. Zudem werden mithilfe dieser Cookies auch die Ladezeit und das Verhalten der Website bei verschiedenen Browsern gemessen.<br><br>
+            
+            <b>Zielorientierte Cookies</b>
+            Diese Cookies sorgen für eine bessere Nutzerfreundlichkeit. Beispielsweise werden eingegebene Standorte, Schriftgrößen oder Formulardaten gespeichert.<br><br>
+            
+            <b>Werbe-Cookies</b>
+            Diese Cookies werden auch Targeting-Cookies genannt. Sie dienen dazu dem User individuell angepasste Werbung zu liefern. Das kann sehr praktisch, aber auch sehr nervig sein.<br><br>
+            
+            Üblicherweise werden Sie beim erstmaligen Besuch einer Webseite gefragt, welche dieser Cookiearten Sie zulassen möchten. Und natürlich wird diese Entscheidung auch in einem Cookie gespeichert.<br><br>
+            
+            <h5>Wie kann ich Cookies löschen?</h5>
+            Wie und ob Sie Cookies verwenden wollen, entscheiden Sie selbst. Unabhängig von welchem Service oder welcher Website die Cookies stammen, haben Sie immer die Möglichkeit Cookies zu löschen, nur teilweise zuzulassen oder zu deaktivieren. Zum Beispiel können Sie Cookies von Drittanbietern blockieren, aber alle anderen Cookies zulassen.<br><br>
+            
+            Wenn Sie feststellen möchten, welche Cookies in Ihrem Browser gespeichert wurden, wenn Sie Cookie-Einstellungen ändern oder löschen wollen, können Sie dies in Ihren Browser-Einstellungen finden:<br><br>
+            
+            Chrome: Cookies in Chrome löschen, aktivieren und verwalten<br>
+            
+            Safari: Verwalten von Cookies und Websitedaten mit Safari<br>
+            
+            Firefox: Cookies löschen, um Daten zu entfernen, die Websites auf Ihrem Computer abgelegt haben<br>
+            
+            Internet Explorer: Löschen und Verwalten von Cookies<br>
+            
+            Microsoft Edge: Löschen und Verwalten von Cookies<br>
+            
+            Falls Sie grundsätzlich keine Cookies haben wollen, können Sie Ihren Browser so einrichten, dass er Sie immer informiert, wenn ein Cookie gesetzt werden soll. So können Sie bei jedem einzelnen Cookie entscheiden, ob Sie das Cookie erlauben oder nicht. Die Vorgangsweise ist je nach Browser verschieden. Am besten ist es Sie suchen die Anleitung in Google mit dem Suchbegriff “Cookies löschen Chrome” oder “Cookies deaktivieren Chrome” im Falle eines Chrome Browsers oder tauschen das Wort “Chrome” gegen den Namen Ihres Browsers, z.B. Edge, Firefox, Safari aus.<br><br>
+            
+            <h5>Wie sieht es mit meinem Datenschutz aus?</h5>
+            Seit 2009 gibt es die sogenannten „Cookie-Richtlinien“. Darin ist festgehalten, dass das Speichern von Cookies eine Einwilligung von Ihnen verlangt. Innerhalb der EU-Länder gibt es allerdings noch sehr unterschiedliche Reaktionen auf diese Richtlinien. In Deutschland wurden die Cookie-Richtlinien nicht als nationales Recht umgesetzt. Stattdessen erfolgte die Umsetzung dieser Richtlinie weitgehend in § 15 Abs.3 des Telemediengesetzes (TMG).<br><br>
+            
+            Wenn Sie mehr über Cookies wissen möchten und technischen Dokumentationen nicht scheuen, empfehlen wir https://tools.ietf.org/html/rfc6265, dem Request for Comments der Internet Engineering Task Force (IETF) namens “HTTP State Management Mechanism”.<br><br>
+            
+            <h5>Speicherung persönlicher Daten</h5>
+            Persönliche Daten, die Sie uns auf dieser Website elektronisch übermitteln, wie zum Beispiel Name, E-Mail-Adresse, Adresse oder andere persönlichen Angaben im Rahmen der Übermittlung eines Formulars oder Kommentaren im Blog, werden von uns gemeinsam mit dem Zeitpunkt und der IP-Adresse nur zum jeweils angegebenen Zweck verwendet, sicher verwahrt und nicht an Dritte weitergegeben.<br><br>
+            
+            Wir nutzen Ihre persönlichen Daten somit nur für die Kommunikation mit jenen Besuchern, die Kontakt ausdrücklich wünschen und für die Abwicklung der auf dieser Webseite angebotenen Dienstleistungen und Produkte. Wir geben Ihre persönlichen Daten ohne Zustimmung nicht weiter, können jedoch nicht ausschließen, dass diese Daten beim Vorliegen von rechtswidrigem Verhalten eingesehen werden.<br><br>
+            
+            Wenn Sie uns persönliche Daten per E-Mail schicken – somit abseits dieser Webseite – können wir keine sichere Übertragung und den Schutz Ihrer Daten garantieren. Wir empfehlen Ihnen, vertrauliche Daten niemals unverschlüsselt per E-Mail zu übermitteln.<br><br>
+            
+            Die Rechtsgrundlage besteht nach Artikel 6  Absatz 1 a DSGVO (Rechtmäßigkeit der Verarbeitung) darin, dass Sie uns die Einwilligung zur Verarbeitung der von Ihnen eingegebenen Daten geben. Sie können diesen Einwilligung jederzeit widerrufen – eine formlose E-Mail reicht aus, Sie finden unsere Kontaktdaten im Impressum.<br><br>
+            
+            <h5>Rechte laut Datenschutzgrundverordnung</h5>
+            Ihnen stehen laut den Bestimmungen der DSGVO grundsätzlich die folgende Rechte zu:<br><br>
+            
+            Recht auf Berichtigung (Artikel 16 DSGVO)<br>
+            Recht auf Löschung („Recht auf Vergessenwerden“) (Artikel 17 DSGVO)<br>
+            Recht auf Einschränkung der Verarbeitung (Artikel 18 DSGVO)<br>
+            Recht auf Benachrichtigung – Mitteilungspflicht im Zusammenhang mit der Berichtigung oder Löschung personenbezogener Daten oder der Einschränkung der Verarbeitung (Artikel 19 DSGVO)<br>
+            Recht auf Datenübertragbarkeit (Artikel 20 DSGVO)<br>
+            Widerspruchsrecht (Artikel 21 DSGVO)<br>
+            Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung — einschließlich Profiling — beruhenden Entscheidung unterworfen zu werden (Artikel 22 DSGVO)<br>
+            Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich an die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI) wenden.<br>
+            
+            <h5>Auswertung des Besucherverhaltens</h5>
+            In der folgenden Datenschutzerklärung informieren wir Sie darüber, ob und wie wir Daten Ihres Besuchs dieser Website auswerten. Die Auswertung der gesammelten Daten erfolgt in der Regel anonym und wir können von Ihrem Verhalten auf dieser Website nicht auf Ihre Person schließen.<br><br>
+            
+            Mehr über Möglichkeiten dieser Auswertung der Besuchsdaten zu widersprechen erfahren Sie in der folgenden Datenschutzerklärung.<br><br>
+            
+            Quelle: Erstellt mit dem Datenschutz Generator von AdSimple in Kooperation mit slashtechnik.de<br><br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="/assets/logo_angular.png" class="card-img-top" alt="angular logo">
-        <div class="card-body">
-          <h5 class="card-title">Angular Framework</h5>
-          <p class="card-text">One Page, Apps, Rollen</p>
+
+    <!-- Modal -->
+    <div class="modal fade" id="Modal-Kontakt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Email Kontakt</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/mleopqwq" method="POST">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Ihr Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="your name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Ihre Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput2" name="_replyto" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea3" class="form-label">Ihre Nachricht</label>
+                <textarea class="form-control" id="exampleFormControlTextarea3" name="message" rows="3" placeholder="your message"></textarea>
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">sent</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="/assets/logo_github.png" class="card-img-top" alt="github logo">
-        <div class="card-body">
-          <h5 class="card-title">Github, Versionsverwaltung</h5>
-          <p class="card-text">Team working, Dokumentation</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <p></p><p>Meine letzten Arbeiten</p>
-
-
-  <div id="myFour" class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="/assets/projekt_peka.png" class="card-img-top" alt="bootstrap logo">
-        <div class="card-body">
-          <h5 class="card-title">Website Relaunch</h5>
-          <p class="card-text">Webdesign<br>
-            CMS<br>
-            WordPress<br>
-            UX Design
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="/assets/projekt_deutsche-biograhie.png" class="card-img-top" alt="wordpress logo">
-        <div class="card-body">
-          <h5 class="card-title">Bibliotheken-Websites</h5>
-          <p class="card-text">Frontend Entwicklung,
-            Github Repositorie, gemeinschaftliche Codeentwicklung
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="/assets/projekt_oberbayern.png" class="card-img-top" alt="angular logo">
-        <div class="card-body">
-          <h5 class="card-title">Angular Framework</h5>
-          <p class="card-text">One Page, Apps, Rollen</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="/assets/projekt_edith.png" class="card-img-top" alt="github logo">
-        <div class="card-body">
-          <h5 class="card-title">Github, Versionsverwaltung</h5>
-          <p class="card-text">Team working, Dokumentation</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-</div>
-
-<div class="position-fixed container-fluid" style="bottom:0; ">
-  <div class="container">
-  <div class="row " >
-    <div class="card-footer text-muted col" >
-      <a href="">Impressum</a>
-    </div>     
-    <div class="card-footer text-muted col" >
-      <a href="">Kontakt</a> 
-    </div> 
-    
-    <div class="card-footer text-muted col text-center">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 32 32">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-      </svg>
-
-      <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <path fill="currentColor" d="M162.7 210c-1.8 3.3-25.2 44.4-70.1 123.5-4.9 8.3-10.8 12.5-17.7 12.5H9.8c-7.7 0-12.1-7.5-8.5-14.4l69-121.3c.2 0 .2-.1 0-.3l-43.9-75.6c-4.3-7.8.3-14.1 8.5-14.1H100c7.3 0 13.3 4.1 18 12.2l44.7 77.5zM382.6 46.1l-144 253v.3L330.2 466c3.9 7.1.2 14.1-8.5 14.1h-65.2c-7.6 0-13.6-4-18-12.2l-92.4-168.5c3.3-5.8 51.5-90.8 144.8-255.2 4.6-8.1 10.4-12.2 17.5-12.2h65.7c8 0 12.3 6.7 8.5 14.1z"></path>
-      </svg>
-
-      
-
-    </div> 
-
-    <div class="card-footer text-muted col text-end">
-      Datenschutz
-    </div> 
-    <div class="card-footer text-muted col text-end">
-      Disclaimer
-    </div> 
-  </div>
-</div>
-</div>
-
-
-      
-
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form action="https://formspree.io/f/mleopqwq" method="POST">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Name</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="your name">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput2" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput2" name="_replyto" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea3" class="form-label">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea3" name="message" rows="3"></textarea>
-            </div>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">sent</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal -->
-<div class="modal fade" id="ImpressumModal" tabindex="-1" aria-labelledby="ImpressumModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="ImpressumModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 
     <!-- Optional JavaScript; choose one of the two! -->

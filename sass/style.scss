@@ -1,0 +1,55 @@
+// 1.) import first color variables
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// 2.) set another primary -- don't forget also set/repeat the another color-variables
+$theme-colors: (
+  "primary":    $cyan-600,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $cyan-900,
+  "icon":       Tomato
+);
+
+// 4.) evtl. set another colors
+$new-background: $gray-600;
+
+// 3.) import as ussualy the bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+
+// 5.) owen styles
+
+body { background-color: $new-background; }
+
+h1 { font-weight: bold;}  
+
+a {
+  color: $cyan-700;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $cyan-800;
+}
+
+.first-theme .row div:nth-child(2){
+  background-image: url(../assets/isabella-and-louisa-fischer-MEc4jblaxZ4-unsplash.jpg);
+  background-size: cover;    
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .first-theme {margin-top: 3vh;}
+    .first-theme .row { height: 67vh; }  
+    h1 { font-size: 5vw;}  
+  }
+  
+  
