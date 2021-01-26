@@ -1,7 +1,13 @@
 // change single variables
 
-$navbar-light-color: #faa749;
 $h1-font-size:  12vw;
+
+$primary: #faa749;
+
+$navbar-light-color:                rgba($primary, .7);
+$navbar-light-hover-color:          rgba($primary, .7);
+$navbar-light-active-color:         rgba($primary, .9);
+$navbar-light-toggler-border-color: rgba($primary, .25) ;
 
 // 2.) import first color variables   ######## FOR ARRAY exp. $theme-colors: (
 @import '../node_modules/bootstrap/scss/functions';
@@ -29,7 +35,7 @@ $h1-font-size:  12vw;
 
 // 3.) set another primary -- don't forget also set/repeat the another color-variables
 $theme-colors: (
-  "primary":    #faa749,
+  "primary":    $primary,
   "secondary":  #333,
   "tertiary":   #76789a,
   "success":    $success,
@@ -55,7 +61,7 @@ $new-background: $gray-600;
 
 // 5.) own styles
 
-.navbar-toggler-icon { color:red}
+.navbar-toggler {color:transparent !important }
 
 h1, h2 { 
   font-weight: 700;

@@ -26,13 +26,16 @@
               <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Features</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" href="#">meine Projekte</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary" href="#">Pricing</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" href="#">meine Qualifikation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" href="#">über mich</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-bs-toggle="modal" class="nav-link text-primary" data-bs-target="#Modal-Kontakt">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -40,7 +43,7 @@
     </nav>
 
     <div class="container-fluid text-primary">
-      <div style="height: 3rem;">&nbsp</div>
+      <div style="height: 3.5rem;">&nbsp</div>
       <h1>HALLO.</h1>
       <h1 class="text-end">ICH BIN</h1>
       <h1 class="text-end">WEBDESIGNER</h1>
@@ -75,6 +78,7 @@
         </div>
         <div class="col-4 text-center fs-3">
           <a href="https://github.com/munich99/homepage" class="mx-2 text-secondary" target="_social"><i class="fab fa-github"></i></a>
+          <a href="#" data-bs-toggle="modal" class="mx-2 text-secondary" data-bs-target="#Modal-Kontakt"><i class="far fa-envelope"></i></a>          
           <a href="https://www.xing.com/profile/Sebastian_Sawicz/" class="mx-2 text-secondary" target="_social"><i class="fab fa-xing"></i></a>
         </div>
         <div class="col-4 text-center">
@@ -84,59 +88,6 @@
       </div>
     </footer>
 
-
-    <div class="container mb-5 first-theme">
-        <div class="row">
-
-          <div class="col-sm-8 p-4 bg-white">
-            <div class="text-end">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#Modal-Kontakt" class="d-block">
-                <i class="far fa-envelope text-icon" style="font-size: 2em;"></i>
-              </a>
-            </div>
-            <div style="background: none;">
-              <h1 class="text-primary">WEBDESIGN</h1>
-              <h1 class="text-primary">FRONTEND</h1>
-              <h1 class="text-primary">STYLING</h1>
-              <h2 class="text-primary"></h2>
-            </div>
-          </div>
-          
-          
-          <div class="col-sm p-0 bg-primary position-relative mt-5 mt-sm-0">
-            <div class="position-absolute bottom-0 start-0 p-3 w-35 p-sm-2">
-              <img class="w-100" src="./assets/erfahrener_designer.png" alt="">
-            </div> 
-            
-          </div>
-        </div>
-    </div>
-
-    <div class="container mb-5">
-      <div class="row">
-        <div class="col-sm-8 p-4 bg-white">
-          Mein Name ist Sebastian Sawicz. Ich arbeite seit über 15 Jahren leidenschaftlich an digitalen Projekten visueller Wahrnehmung und Information. Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause. Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.
-        </div>
-        <div class="col-sm bg-primary">
-          One of three columns
-        </div>
-      </div>
-      <div style="height: 3em;"></div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="fixed-bottom bg-dark text-white py-1">
-      <div class="container">
-        <div class="row align-items-center">
-          <a href="#" class="col-sm text-center text-md-start" data-bs-toggle="modal" data-bs-target="#Modal-Impressum">Impressum</a>          
-          <div class="col-sm text-center">
-            <a href="https://github.com/munich99/homepage" target="_social" style="font-size: 2em;" class=" text-icon"><i class="fab fa-github mx-2 text-icon"></i></a>
-            <a href="https://www.xing.com/profile/Sebastian_Sawicz/" target="_social" style="font-size: 2em;"><i class="fab fa-xing mx-2 text-icon"></i></a>            
-          </div>
-          <a href="#" class="col-sm text-center text-md-end" data-bs-toggle="modal" data-bs-target="#Modal-Datenschutz">Datenschutz</a>  
-        </div>
-      </div>
-    </footer>
 
     <!-- Modal -->
     <div class="modal fade" id="Modal-Impressum" tabindex="-1" aria-labelledby="ImpressumModalLabel" aria-hidden="true">
@@ -191,7 +142,7 @@ Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen:<br>
 Illustrator Sebastian Sawicz
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
           </div>
         </div>
       </div>
@@ -319,7 +270,7 @@ Illustrator Sebastian Sawicz
             Quelle: Erstellt mit dem Datenschutz Generator von AdSimple in Kooperation mit slashtechnik.de<br><br>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
           </div>
         </div>
       </div>
@@ -348,10 +299,20 @@ Illustrator Sebastian Sawicz
                 <textarea class="form-control" id="exampleFormControlTextarea3" name="message" rows="3" placeholder="your message"></textarea>
               </div>
 
+
+
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">sent</button>
+            <div class="w-100 text-end">
+              <div class="form-check d-inline-block">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Email Kopie an mich
+                </label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+            <button type="submit" class="btn btn-primary">Absenden</button>
           </div>
         </div>
       </div>
