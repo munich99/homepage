@@ -4878,7 +4878,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(118, 120, 154, 0.25);
   border-radius: 0.25rem;
 }
 
@@ -4941,7 +4941,7 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(118, 120, 154, 0.25);
 }
 
 .card-header:first-child {
@@ -4951,7 +4951,7 @@ fieldset:disabled .btn {
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid rgba(118, 120, 154, 0.25);
 }
 
 .card-footer:last-child {

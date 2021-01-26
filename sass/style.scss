@@ -3,11 +3,14 @@
 $h1-font-size:  12vw;
 
 $primary: #faa749;
+$tertiary: #76789a;
 
 $navbar-light-color:                rgba($primary, .7);
 $navbar-light-hover-color:          rgba($primary, .7);
 $navbar-light-active-color:         rgba($primary, .9);
-$navbar-light-toggler-border-color: rgba($primary, .25) ;
+$navbar-light-toggler-border-color: rgba($primary, .25);
+
+$card-border-color:                 rgba($tertiary, 0.25);
 
 // 2.) import first color variables   ######## FOR ARRAY exp. $theme-colors: (
 @import '../node_modules/bootstrap/scss/functions';
@@ -37,7 +40,7 @@ $navbar-light-toggler-border-color: rgba($primary, .25) ;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  #333,
-  "tertiary":   #76789a,
+  "tertiary":   $tertiary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
