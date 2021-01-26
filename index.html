@@ -6,14 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./sass/style.css">    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <title>Hello Webdesign</title>
 
   </head>
-  <body>
+  <body class="bg-secondary">
+
+    <div class="container-fluid text-primary">
+      <h1>HALLO.</h1>
+      <h1 class="text-end">ICH BIN</h1>
+      <h1 class="text-end">WEBDESIGNER</h1>
+      <h2 class="text-end text-tertiary">UND FRONTEND-ENTWICKLER</h2>
+      <p class="h3 my-4">Mein Name ist Sebastian Sawicz. Ich arbeite seit über 15 Jahren leidenschaftlich an digitalen Projekten visueller Wahrnehmung und Information.
+        <span class="d-none d-md-inline">Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause.</span>
+        <span class="d-none d-md-inline">Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.</span> 
+      </p>
+    </div>
+    <div class="container-fluid text-primary">
+      <div class="row">
+        <div class="col-md-4 p-0">
+          <img class="w-100" src="./assets/website_laptop.jpg" alt="work space">
+          <div class="h3 my-4 mx-1 px-2 d-md-none">Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause.</div>
+        </div>
+        <div class="col-md-4 p-0">
+          <img class="w-100" src="./assets/frontend_developer.jpg" alt="that's me">
+          <div class="h3 my-4 mx-1 px-2 d-md-none">Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.</div>
+        </div>
+        <div class="col-md-4 p-0">
+          <img class="w-100" src="./assets/ux_design.jpg" alt="ux/ui planing">
+        </div>
+      </div>
+      <p class="h3 my-4">Als Freelancer und Teamplayer namhafter Digital Agenturen kann ich sicherlich auch zum Erfolg Ihrer Projektarbeit einen wichtigen Teil beitragen. Gerne lege ich meine Hand auch an Online-Werbemitteln in Form von interaktiven Bannern, CSS-Teasern, Landigpages und interaktive Spielen an. Natürlich ist alles Resposive und auf allen Endgeräten technisch perfekt.</p>
+    </div>
+
+
     <div class="container mb-5 first-theme">
         <div class="row">
 
@@ -27,16 +55,21 @@
               <h1 class="text-primary">WEBDESIGN</h1>
               <h1 class="text-primary">FRONTEND</h1>
               <h1 class="text-primary">STYLING</h1>
+              <h2 class="text-primary"></h2>
             </div>
           </div>
           
-          <div class="col-sm p-0 bg-primary position-relative">
-            <img class="position-absolute bottom-0 start-0 p-3 w-50" src="./assets/erfahrener_designer.png" alt="">         
+          
+          <div class="col-sm p-0 bg-primary position-relative mt-5 mt-sm-0">
+            <div class="position-absolute bottom-0 start-0 p-3 w-35 p-sm-2">
+              <img class="w-100" src="./assets/erfahrener_designer.png" alt="">
+            </div> 
+            
           </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mb-5">
       <div class="row">
         <div class="col-sm-8 p-4 bg-white">
           Mein Name ist Sebastian Sawicz. Ich arbeite seit über 15 Jahren leidenschaftlich an digitalen Projekten visueller Wahrnehmung und Information. Seit 2012 bin ich verstärkt in Disziplinen der Frontend Entwicklung und des UX/UI Designs zuhause. Gerne produziere ich auch für Sie die passende Webpräsenz, Onlineshop für Ihre Produkte oder die App für Ihre Dienstleistung.
@@ -45,18 +78,19 @@
           One of three columns
         </div>
       </div>
+      <div style="height: 3em;"></div>
     </div>
 
     <!-- Footer -->
     <footer class="fixed-bottom bg-dark text-white py-1">
       <div class="container">
         <div class="row align-items-center">
-          <a href="#" class="col-sm" data-bs-toggle="modal" data-bs-target="#Modal-Impressum">Impressum</a>          
+          <a href="#" class="col-sm text-center text-md-start" data-bs-toggle="modal" data-bs-target="#Modal-Impressum">Impressum</a>          
           <div class="col-sm text-center">
-            <a href="https://github.com/munich99/homepage" target="_social" style="font-size: 2em;"><i class="fab fa-github mx-2 text-icon"></i></a>
+            <a href="https://github.com/munich99/homepage" target="_social" style="font-size: 2em;" class=" text-icon"><i class="fab fa-github mx-2 text-icon"></i></a>
             <a href="https://www.xing.com/profile/Sebastian_Sawicz/" target="_social" style="font-size: 2em;"><i class="fab fa-xing mx-2 text-icon"></i></a>            
           </div>
-          <a href="#" class="col-sm text-end" data-bs-toggle="modal" data-bs-target="#Modal-Datenschutz">Datenschutz</a>  
+          <a href="#" class="col-sm text-center text-md-end" data-bs-toggle="modal" data-bs-target="#Modal-Datenschutz">Datenschutz</a>  
         </div>
       </div>
     </footer>

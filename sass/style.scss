@@ -1,11 +1,31 @@
 // 1.) import first color variables
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/utilities';
+
+// Sizing utilitie
+
+
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "width": map-merge(
+//       map-get($utilities, "width"),
+//       (
+//         values: map-merge(
+//           map-get(map-get($utilities, "width"), "values"),
+//           (35: 35%),
+//         ),
+//       ),
+//     ),
+//   )
+// );
 
 // 2.) set another primary -- don't forget also set/repeat the another color-variables
 $theme-colors: (
-  "primary":    $cyan-600,
-  "secondary":  $secondary,
+  "primary":    #faa749,
+  "secondary":  #333,
+  "tertiary":   #76789a,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -14,6 +34,9 @@ $theme-colors: (
   "dark":       $cyan-900,
   "icon":       Tomato
 );
+
+$h1-font-size:  12vw;
+// $h2-font-size:  4.6vw;
 
 // 4.) evtl. set another colors
 $new-background: $gray-600;
@@ -26,30 +49,62 @@ $new-background: $gray-600;
 
 // 5.) owen styles
 
-body { background-color: $new-background; }
-
-h1 { font-weight: bold;}  
+h1, h2 { 
+  font-weight: 700;
+  line-height: 90%;
+}  
 
 a {
   color: $cyan-700;
   text-decoration: underline;
 }
 
-a:hover {
-  color: $cyan-800;
-}
+a:hover { color: $cyan-800; }
 
 .first-theme .row div:nth-child(2){
-  background-image: url(../assets/isabella-and-louisa-fischer-MEc4jblaxZ4-unsplash.jpg);
-  background-size: cover;    
+  background-image: url(../assets/isabella-and-louisa-fischer-MEc4jblaxZ4-unsplash_mobile.jpg);
+  background-size: cover;
+  min-height: 15em;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
 }
 
+.first-theme .row div:nth-child(2) div { width: 35%; }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+// .first-theme .row div img { width: 10em;}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  // xs
+  .first-theme .row div:nth-child(2) div { width: 100%!important; }
+ }
+
+
+/* Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {    
+    // md
     .first-theme {margin-top: 3vh;}
-    .first-theme .row { height: 67vh; }  
-    h1 { font-size: 5vw;}  
+    .first-theme .row { height: 67vh;}      
+    .first-theme .row div:nth-child(2){ background-image: url(../assets/isabella-and-louisa-fischer-MEc4jblaxZ4-unsplash.jpg); }    
+    .first-theme .row div:nth-child(2) div { width: 75%!important; }
   }
+
+  // Medium devices (tablets, 992px and up)
+@media (min-width: 992px) { 
+   // lg
+  .first-theme .row div:nth-child(2) div { width: 65%!important; }  
+ }
+
+ // Large devices (desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  //xl
+  .first-theme .row div:nth-child(2) div { width: 45%!important; }  
+ }
+
+  // Large devices (desktops, 1400px and up)
+@media (min-width: 1400px) { 
+  //xxl
+  .first-theme .row div:nth-child(2) div { width: 35%!important; }  
+ }
   
   
