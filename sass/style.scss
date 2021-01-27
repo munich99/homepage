@@ -64,11 +64,13 @@ $new-background: $gray-600;
 
 // 5.) own styles
 
-.navbar-collapse {
-  border: 1px solid $navbar-light-toggler-border-color;
-  margin-top: 0.5rem;
-  border-radius: 0.25rem;
-  padding-left: 0.5rem;
+nav {
+  border-right: solid 1px #333;
+  border-radius: 0 0 0.25rem 0;
+}
+
+.show {
+  border-radius: 0.25rem;  
 }
 
 .navbar-toggler {color:transparent !important }
