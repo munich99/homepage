@@ -11528,6 +11528,13 @@ fieldset:disabled .btn {
   }
 }
 
+.navbar-collapse {
+  border: 1px solid rgba(250, 167, 73, 0.25);
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+}
+
 .navbar-toggler {
   color: transparent !important;
 }
