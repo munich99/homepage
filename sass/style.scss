@@ -1,0 +1,137 @@
+// change single variables
+
+$h1-font-size:  12vw;
+
+$primary: #faa749;
+$tertiary: #76789a;
+
+$navbar-light-color:                rgba($primary, .7);
+$navbar-light-hover-color:          rgba($primary, .7);
+$navbar-light-active-color:         rgba($primary, .9);
+$navbar-light-toggler-border-color: rgba($primary, .25);
+
+$card-border-color:                 rgba($tertiary, 0.35);
+
+// 2.) import first color variables   ######## FOR ARRAY exp. $theme-colors: (
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/utilities';
+
+// Sizing utilitie
+
+
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "width": map-merge(
+//       map-get($utilities, "width"),
+//       (
+//         values: map-merge(
+//           map-get(map-get($utilities, "width"), "values"),
+//           (35: 35%),
+//         ),
+//       ),
+//     ),
+//   )
+// );
+
+
+// 3.) set another primary -- don't forget also set/repeat the another color-variables
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  #333,
+  "tertiary":   $tertiary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $cyan-900,
+  "icon":       Tomato
+);
+
+
+// $h2-font-size:  4.6vw;
+
+// 4.) evtl. set another colors
+$new-background: $gray-600;
+
+// 4.) import as ussualy the bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+
+// 5.) own styles
+
+nav {
+  border-right: solid 1px #333;
+  border-radius: 0 0 0.25rem 0;
+}
+
+.show {
+  border-radius: 0.25rem;  
+}
+
+.navbar-toggler {color:transparent !important }
+
+h1, h2 { 
+  font-weight: 700;
+  line-height: 90%;
+}  
+
+a {
+  color: $cyan-700;
+  text-decoration: underline;
+}
+
+a:hover { color: $cyan-800; }
+
+.first-theme .row div:nth-child(2){
+  background-image: url(../assets/isabella-and-louisa-fischer-MEc4jblaxZ4-unsplash_mobile.jpg);
+  background-size: cover;
+  min-height: 15em;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+}
+
+.first-theme .row div:nth-child(2) div { width: 35%; }
+
+// .first-theme .row div img { width: 10em;}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+  // xs
+  .first-theme .row div:nth-child(2) div { width: 100%!important; }
+ }
+
+
+/* Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {    
+    // md
+    .first-theme {margin-top: 3vh;}
+    .first-theme .row { height: 67vh;}      
+    .first-theme .row div:nth-child(2){ background-image: url(../assets/isabella-and-louisa-fischer-MEc4jblaxZ4-unsplash.jpg); }    
+    .first-theme .row div:nth-child(2) div { width: 75%!important; }
+  }
+
+  // Medium devices (tablets, 992px and up)
+@media (min-width: 992px) { 
+   // lg
+    nav { width: 100%;}
+    .first-theme .row div:nth-child(2) div { width: 65%!important; }  
+ }
+
+ // Large devices (desktops, 1200px and up)
+@media (min-width: 1200px) { 
+  //xl
+  .first-theme .row div:nth-child(2) div { width: 45%!important; }  
+ }
+
+  // Large devices (desktops, 1400px and up)
+@media (min-width: 1400px) { 
+  //xxl
+  .first-theme .row div:nth-child(2) div { width: 35%!important; }  
+ }
+  
+  
