@@ -5,7 +5,7 @@ $h1-font-size:  12vw;
 $primary: #faa749;
 $tertiary: #76789a;
 
-$navbar-light-color:                rgba(255,255,255,0.7);
+
 $navbar-light-hover-color:          rgba($primary, .7);
 $navbar-light-active-color:         rgba($primary, .9);
 $navbar-light-toggler-border-color: rgba($primary, .25);
@@ -37,6 +37,7 @@ $card-border-color:                 rgba($tertiary, 0.35);
 
 
 // 3.) set another primary -- don't forget also set/repeat the another color-variables
+
 $theme-colors: (
   "primary":    $primary,
   "secondary":  #333,
@@ -54,7 +55,8 @@ $theme-colors: (
 // $h2-font-size:  4.6vw;
 
 // 4.) evtl. set another colors
-$new-background: $gray-600;
+$new-background:      $gray-600;
+$navbar-light-color:  $gray-500;
 
 // 4.) import as ussualy the bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
